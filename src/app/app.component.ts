@@ -1,0 +1,18 @@
+import { Component, OnInit } from '@angular/core';
+import { interval, of } from 'rxjs';
+import { concatMap, mergeMap, delay, exhaustMap, map, switchMap, take, tap } from 'rxjs/operators';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
+})
+export class AppComponent implements OnInit {
+
+  redTrainsCalled = 0;
+  yellowTrainsCalled = 0;
+
+  ngOnInit() {
+
+  }
+}
